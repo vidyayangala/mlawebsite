@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MadhaviLatha Associates</title>
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+}
+
+/* NAVBAR */
+header {
+    background: #0f0f0f;
+    color: white;
+    padding: 18px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-weight: 600;
+}
+
+nav a {
+    color: #ddd;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* HERO */
+    .hero {
+        height: 90vh;
+        background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('photo-1589829545856-d10d557cf95f.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: gold;
+    padding: 12px 24px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+}
+
+/* DARK SECTION */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark p {
+    color: #ccc;
+}
+
+/* SERVICES */
+.grid {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.dark .card {
+    background: #1e1e1e;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #ccc;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* CONTACT */
+.contact-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    max-width: 300px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.map {
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: #0f0f0f;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>MadhaviLatha Associates</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>MadhaviLatha Associates</h1>
+        <p>Property & Family Law Experts</p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        The law is complicated and can be confusing to the untrained eye. Do you feel that you have been wronged but have no idea where to start? madhavilatha associates has been providing comprehensive and easy to understand counsel since 2017. We know how overwhelming the legal process can be, especially when you are under an enormous amount of stress. This is why our goal is to help you understand your rights and the issues affecting your case.
+
+
+        I am an advocate yes, but I never forget that my clients are people with unique emotions and values. madhavilatha associates services keeps you involved and personally guides you in making important decisions about your case, calmly and effectively. We let you know what is going on at every stage, and explain every small detail so that you are in charge.
+    </p>
+</section>
+
+<section id="services" class="section dark">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+
+        <!-- Property Law -->
+        <div class="card">
+            <img src="6dce6055-1857-4f74-a526-663a1efbdd6c.jpg" alt="Property Law">
+            <div class="card-content">
+                <h3>Property Law</h3>
+                <p>
+                    Navigating the complexities of real estate law requires precision and foresight. At <strong>MadhaviLatha Associates</strong>, 
+                    we provide end-to-end legal support to ensure your property investments are secure and your transactions are seamless. 
+                    Whether you are a first-time homebuyer or a seasoned developer, we protect your interests at every step.
+                </p>
+            </div>
+        </div>
+
+        <!-- Family Law -->
+        <div class="card">
+            <img src="00d89388-f8cd-4c0f-987a-152c4127f74f.jpg" alt="Family Law">
+            <div class="card-content">
+                <h3>Family Law</h3>
+                <p>
+                    Family legal matters are deeply personal and often emotionally challenging. At <strong>MadhaviLatha Associates</strong>, 
+                    we approach every case with the sensitivity it deserves, 
+                    providing a calm and supportive environment while vigorously protecting your legal rights and future.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <p>
+                <strong>Address:</strong><br>
+                #2, 1st Floor,<br>
+                Opp Elite Belathur Apartment,
+                Belathur,Kadugodi
+                Bangalore, Karnataka, India
+            </p>
+
+            <p><strong>Phone:</strong><br>
+            +91 7995151523</p>
+
+            <p><strong>Email:</strong><br>
+            madhavi@madhavilathaassociates.com</p>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.96781923391507!2d77.75355597061989!3d13.004750475883124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0f0d4c276ddf%3A0xe90e6a9453c1c0f5!2sB.MadhaviLatha%2C%20Advocate!5e0!3m2!1sen!2sin!4v1776684352831!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 MadhaviLatha Associates</p>
+</footer>
+
+</body>
+</html>
